@@ -1,0 +1,48 @@
+/* Larger screens: horizontal navigation and two-column introduction */
+@media screen and (min-width: 700px) {
+  .site-header {
+    flex-wrap: nowrap;
+    padding: .65rem max(1.25rem, calc((100% - 1200px) / 2));
+  }
+  .menu-toggle { display: none; }
+  .primary-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
+    background: transparent;
+  }
+  .primary-nav a {
+    padding: .75rem 1rem;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    color: var(--navy-dark);
+  }
+  .primary-nav a[aria-current="page"] {
+    color: var(--navy);
+    background: transparent;
+    border-left: 0;
+    border-bottom-color: var(--gold);
+  }
+  .primary-nav a:hover, .primary-nav a:focus-visible {
+    color: var(--navy);
+    background: #f1f5f9;
+    border-bottom-color: var(--gold);
+  }
+  .intro-grid {
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    align-items: stretch;
+  }
+  .panel-content { min-height: 260px; }
+  .photo-frame { min-height: 220px; }
+  .student-photo { height: 220px; }
+  .course-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media screen and (min-width: 1000px) {
+  main { margin-top: 1.6rem; }
+  .panel-content { min-height: 280px; }
+  .photo-frame { min-height: 240px; }
+  .student-photo { height: 240px; }
+  .course-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
