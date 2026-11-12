@@ -1,0 +1,74 @@
+/* Apply to screens 768px and wider */
+@media screen and (min-width: 768px) {
+
+    /* Header & Navigation */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .logo-box {
+        gap: 1.5rem;
+        padding-right: 0;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header .site-title {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        border-top: none;
+        padding: 0.5rem 1rem;
+        margin-left: 0.5rem;
+        border-radius: 4px;
+    }
+
+    /* Grid View - Multi-column */
+    .grid-view {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* List View - Single-Row Layout */
+    .list-view .member-card {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1.2fr 1.5fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    .member-card {
+        padding: 2rem;
+    }
+
+    .list-view .member-card h2 {
+        margin: 0;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+}

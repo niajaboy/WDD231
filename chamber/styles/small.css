@@ -1,0 +1,223 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #117a65;
+    --text-color: #333333;
+    --bg-color: #f4f4f4;
+    --card-bg: #ffffff;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+/* Header & Logo */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 2.5rem;
+    text-align: left;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+header .site-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Small View Navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    background-color: var(--primary-color);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+/* Main Content & View Toggles */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.view-toggles {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-toggles button {
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.view-toggles button:hover,
+.view-toggles button[aria-pressed="true"] {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border-color: var(--secondary-color);
+}
+
+/* Directory Views - Mobile Baseline */
+#members-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: var(--card-bg);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.member-card img {
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 0.5rem auto;
+}
+
+.member-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.member-card p {
+    margin: 0.25rem 0;
+}
+
+.member-card a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+/* List View */
+.list-view .member-card {
+    text-align: left;
+    padding: 1rem;
+}
+
+.list-view .member-card img {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+footer address a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}

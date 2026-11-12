@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jos Chamber of Commerce - Directory</title>
+    <meta name="description" content="Business directory for the Jos Chamber of Commerce, promoting economic growth on the Plateau.">
+    <meta name="author" content="Nanlung Micheal Longtau">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Jos Chamber of Commerce - Directory">
+    <meta property="og:description" content="Discover local businesses and networking opportunities in Jos, Plateau State.">
+    <meta property="og:image" content="images/jos-chamber-social.jpg">
+    <meta property="og:url" content="https://niajaboy.github.io/wdd231/chamber/directory.html">
+    
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.svg" alt="Jos Chamber of Commerce Logo" width="80" height="80">
+            <span class="site-title">Jos Chamber of Commerce</span>
+        </div>
+        
+        <button type="button" id="menu" aria-label="Toggle Menu" aria-expanded="false" aria-controls="primary-nav"></button>
+        <nav aria-label="Primary Navigation">
+            <ul id="primary-nav" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+        <div class="view-toggles" role="group" aria-label="Directory View Options">
+            <button type="button" id="grid-btn" aria-pressed="true">Grid</button>
+            <button type="button" id="list-btn" aria-pressed="false">List</button>
+        </div>
+        
+        <div id="members-container" class="grid-view" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <address class="footer-info">
+            <strong>Jos Chamber of Commerce</strong><br>
+            12 Bauchi Ring Road, Jos, Plateau<br>
+            <a href="mailto:info@joschamber.example.com">info@joschamber.example.com</a><br>
+            <a href="tel:+2348001234567">(0800) 123-4567</a>
+        </address>
+        <div class="dev-info">
+            <p>WDD231 Class Project | Nanlung Micheal Longtau</p>
+            <p>&copy; <span id="currentyear"></span> Jos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

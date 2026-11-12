@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Jos Tech Hub",
+    "address": "12 Bauchi Ring Road, Jos, Plateau State",
+    "phone": "0800 123 4567",
+    "website": "https://www.jostechhub.example.com",
+    "image": "jos-tech-hub.webp",
+    "membershipLevel": 3,
+    "description": "Empowering the Plateau with digital innovation and tech education."
+  },
+  {
+    "name": "Plateau Peaks Hotel",
+    "address": "100 Rayfield Resort Road, Jos",
+    "phone": "0800 234 5678",
+    "website": "https://www.plateaupeaks.example.com",
+    "image": "plateau-peaks-hotel.webp",
+    "membershipLevel": 2,
+    "description": "Luxury accommodation with scenic views of the Jos plateau."
+  },
+  {
+    "name": "Terminus Market Traders Assoc.",
+    "address": "Terminus Main Market, Jos",
+    "phone": "0800 345 6789",
+    "website": "https://www.terminusmarket.example.com",
+    "image": "terminus-market-traders-assoc.webp",
+    "membershipLevel": 1,
+    "description": "Supporting local commerce and retail traders."
+  },
+  {
+    "name": "Rayfield Golf Resorts",
+    "address": "Rayfield, Jos South",
+    "phone": "0800 456 7890",
+    "website": "https://www.rayfieldgolf.example.com",
+    "image": "rayfield-golf-resorts.webp",
+    "membershipLevel": 3,
+    "description": "Nigeria's oldest golf course offering premium recreation."
+  },
+  {
+    "name": "Lamingo Water Bottling Co.",
+    "address": "Lamingo Dam Road, Jos",
+    "phone": "0800 567 8901",
+    "website": "https://www.lamingowater.example.com",
+    "image": "lamingo-water-bottling-co.webp",
+    "membershipLevel": 2,
+    "description": "Pure spring water sourced directly from the plateau."
+  },
+  {
+    "name": "Berom Cultural Crafts",
+    "address": "Bukuru Express Way, Jos South",
+    "phone": "0800 678 9012",
+    "website": "https://www.beromcrafts.example.com",
+    "image": "berom-cultural-crafts.webp",
+    "membershipLevel": 1,
+    "description": "Authentic handmade cultural artifacts and pottery."
+  },
+  {
+    "name": "Tin City Transit",
+    "address": "Old Airport Road, Jos",
+    "phone": "0800 789 0123",
+    "website": "https://www.tincitytransit.example.com",
+    "image": "tin-city-transit.webp",
+    "membershipLevel": 2,
+    "description": "Reliable intra-city and inter-state logistics."
+  }
+]
