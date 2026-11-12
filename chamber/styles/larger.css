@@ -42,11 +42,11 @@
     }
 
     /* Grid View - Multi-column */
-    .grid-view {
-        display: grid !important;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-    }
+   #members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
 
     /* List View - Single-Row Layout */
     .list-view .member-card {
