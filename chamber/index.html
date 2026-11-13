@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jos Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Jos Chamber of Commerce. Connect with local businesses, view upcoming community events, and grow on the Plateau.">
+    <meta name="author" content="Nanlung Micheal Longtau">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Jos Chamber of Commerce | Local Business &amp; Economic Hub">
+    <meta property="og:description" content="Supporting economic growth, networking, and local enterprise across Jos, Plateau State.">
+    <meta property="og:image" content="https://niajaboy.github.io/wdd231/chamber/images/hero-medium.webp">
+    <meta property="og:url" content="https://niajaboy.github.io/wdd231/chamber/index.html">
+    
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- ES Module Entry Point (deferred automatically) -->
+    <script type="module" src="scripts/home.mjs"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.svg" alt="Jos Chamber of Commerce Logo" width="80" height="80">
+            <span class="site-title">Jos Chamber of Commerce</span>
+        </div>
+        
+        <button type="button" id="menu" aria-label="Toggle Menu" aria-expanded="false" aria-controls="primary-nav"></button>
+        <nav aria-label="Primary Navigation">
+            <ul id="primary-nav" class="navigation">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Scalable Responsive Hero Image & Call to Action -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Panoramic view of the Jos Plateau landscape and business district" width="1500" height="750">
+            </picture>
+            <div class="hero-overlay">
+                <h1 id="hero-heading">Building Business on the Plateau</h1>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Current Events & Live Weather -->
+        <div class="home-info-grid">
+            <section class="info-card events-card" aria-labelledby="events-heading">
+                <h2 id="events-heading">Current Events</h2>
+                <article class="event-item">
+                    <h3>Plateau Tech &amp; Trade Expo</h3>
+                    <p><strong>Date:</strong> November 24, 2026 &bull; 10:00 AM</p>
+                    <p><strong>Location:</strong> Crest Hotel Conference Hall, Jos</p>
+                    <p>Connect with regional innovators, fintech startups, and agricultural suppliers.</p>
+                </article>
+                <article class="event-item">
+                    <h3>Monthly Business Networking Breakfast</h3>
+                    <p><strong>Date:</strong> December 5, 2026 &bull; 8:30 AM</p>
+                    <p><strong>Location:</strong> Rayfield Golf Resort Clubhouse</p>
+                    <p>Open forum for chamber members to pitch partnerships and discuss local policy.</p>
+                </article>
+            </section>
+
+            <section class="info-card weather-card" aria-labelledby="weather-heading">
+                <h2 id="weather-heading">Current Weather</h2>
+                <div id="current-weather" aria-live="polite">
+                    <p>Loading Jos weather...</p>
+                </div>
+            </section>
+
+            <section class="info-card forecast-card" aria-labelledby="forecast-heading">
+                <h2 id="forecast-heading">3-Day Forecast</h2>
+                <div id="weather-forecast" aria-live="polite">
+                    <p>Loading 3-day forecast...</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Random Gold & Silver Member Spotlights -->
+        <section class="spotlights-section" aria-labelledby="spotlights-heading">
+            <h2 id="spotlights-heading">Member Spotlights</h2>
+            <div id="spotlights-container" class="spotlights-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <address class="footer-info">
+            <strong>Jos Chamber of Commerce</strong><br>
+            12 Bauchi Ring Road, Jos, Plateau<br>
+            info@joschamber.example.com<br>
+            <a href="tel:+2348001234567">(0800) 123-4567</a>
+        </address>
+        <div class="dev-info">
+            <p>WDD231 Class Project | Nanlung Micheal Longtau</p>
+            <p>&copy; <span id="currentyear"></span> Jos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
